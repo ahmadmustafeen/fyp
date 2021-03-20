@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-const Home = (props) => {
+const Camparsion = (props) => {
     return (
     <div>
-Home
+Camparsion
     </div>
     )
 }
-export default Home
+export default Camparsion
