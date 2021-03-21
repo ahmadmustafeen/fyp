@@ -1,8 +1,6 @@
 import './App.css';
 import Screen from './Components/Screen';
-
-
-function App() {
+const  App = () => {
   return (
       <Screen />
   );
