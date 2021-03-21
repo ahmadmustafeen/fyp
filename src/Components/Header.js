@@ -9,16 +9,19 @@ const Header = (props) => {
                 <h1 className="header-title">Site Title</h1>
                 <ul className="header-links">
                         <li>
-                        <Link to="/">Home</Link>
+                            
+                        <a href="/">Home</a>
+                        
+                        
                         </li>
                         <li>
-                        <Link to="/compare">Comparsion</Link>
+                        <a href="./compare">Comparsion</a>
                         </li>
                         {/* <li>
                         <Link to="/login">Login</Link>
                         </li> */}
                         <li>
-                        <Link to="/scholarship">Scholarship</Link>
+                        <a href="/scholarship">Scholarship</a>
                         </li>
                 </ul>
             </nav>

@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:display=swap');
 *{
   font-family: 'Source Sans Pro', sans-serif;
+  /* background-color: #eeeeee; */
 }
 
 button{
   border: 0px solid white;
+
 }
 
 
@@ -12,7 +14,8 @@ button{
 
 /* header */
 .header{
-  background-color: #c0c0c0;
+  color: white;
+  background-color: #041e3a;
   width:100%;
   height:100px;
   display: flex;
@@ -38,16 +41,27 @@ button{
 }
 .header-links li{
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  
 }
 
+.header-links li a{
+  color: white;
+}
 
 /* footer */
 .footer{
-  background-color: #c0c0c0;
+  width: 100%;
+  /* position: sticky; */
+  margin: 0%;
+  /* bottom: 0; */
+  color: white;
+  background-color: #041e3a;
 }
 .list-unstyled a{
   margin-left: -40px;
-  color: black;
+  color: white;
 }
 
 
@@ -85,6 +99,7 @@ padding:0 30px;
 
 /* ImageWithText */
 .ImageWithText{
+  padding: 50px 0;
   display: flex;
   flex-direction: row;
 }
@@ -156,4 +171,94 @@ padding:0 30px;
 .btn-feature button:hover{
   background-color: rgb(255, 204, 204);
   transition: background-color 6ms ease;
+}
+
+
+
+
+
+
+/* scholarShipPage */
+.scholarship-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.scholarship-item{
+  width: 25%;
+  margin: 2px;
+}
+.scholarship{
+  min-height: 75vh;
+  padding-top: 50px;
+}
+
+
+
+
+
+/* ScholarShipComponent */
+.ScholarShipComponent{
+  width: 100%;
+  background-color: #041e3a85;
+  height: 250px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: black 1px solid;
+  box-shadow: 0px 5px 5px rgb(209, 209, 209);
+}
+.ScholarShipComponent:hover{
+  background-color: #041e3abe;
+  color: white;
+  text-decoration: none;
+}
+.ScholarShipComponent h3{
+  font-weight: 400;
+  font-style: italic;
+  font-size: 32px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+.Scholarshipdetails{
+  min-height: 70vh;
+}
+.ScholarshipItem{
+  /* width: 100%; */
+  min-height: 100px;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #041e3a85;
+}
+.ScholarshipItem:hover{
+  background-color: #041e3abe;
+  text-decoration: none;
+}
+.ScholarshipItem h3{
+  font-size: 24px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+
+
+
+.ScholarShip_Item_element{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  margin: 10px auto;
 }
