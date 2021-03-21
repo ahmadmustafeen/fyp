@@ -1,4 +1,5 @@
 import {BrowserRouter as Router, withRouter } from 'react-router-dom';
+import AuthRouterComponent from '../AuthRouter.js';
 import RouterComponent from '../Router'
 import Footer from './Footer'
 import Header from './Header'
@@ -6,9 +7,10 @@ import Header from './Header'
 function Screen() {
   return (
       <Router>
-      <Header/>
+      {/* <Header/> */}
+      <AuthRouterComponent />
       <RouterComponent />
-      <Footer />
+      {/* <Footer /> */}
       </Router>
   );
 }
