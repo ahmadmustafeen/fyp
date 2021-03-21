@@ -1,7 +1,7 @@
 import React from 'react'
 import CarasoulComponent from '../../Components/Carasoul'
 import HeaderText from '../../Components/HeaderText'
-
+import ImageWithText from '../../Components/ImageWithText'
 const Home = (props) => {
     return (
     <div>
@@ -38,6 +38,9 @@ const Home = (props) => {
         d a sd as d a sd asd sa d as d 
         sad  as d sa d sa        d "
          />
+         <div style={{width:'80%',display:'flex',margin:'auto'}}>
+         <ImageWithText heading="asdd" paragraph="adsadads"/>
+         </div>
     </div>
     )
 }
