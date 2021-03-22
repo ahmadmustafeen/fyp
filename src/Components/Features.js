@@ -41,9 +41,9 @@ const Features =  (props) => {
                 </p>
             </div>
         </div>
-        <div className="btn-feature">
+        <a  href = "/scholarship"className="btn-feature">
             <button>Scholarships</button>
-        </div>
+        </a>
     </div>
     )
 }

@@ -45,17 +45,20 @@ button{
   align-items: center;
   
 }
-
 .header-links li a{
   color: white;
 }
 
+
+
+
+
+
+
 /* footer */
 .footer{
   width: 100%;
-  /* position: sticky; */
   margin: 0%;
-  /* bottom: 0; */
   color: white;
   background-color: #041e3a;
 }
@@ -63,6 +66,11 @@ button{
   margin-left: -40px;
   color: white;
 }
+
+
+
+
+
 
 
 /* carasoul */
@@ -89,7 +97,7 @@ button{
   text-align: center;
 }
 .HT-Paragraph{
-  align-self: center;
+  text-align: center;
   width: 80%;
 padding:0 30px;  
 }
@@ -221,14 +229,6 @@ padding:0 30px;
   font-size: 32px;
   margin: 0;
 }
-
-
-
-
-
-
-
-
 .Scholarshipdetails{
   min-height: 70vh;
 }
@@ -252,13 +252,91 @@ padding:0 30px;
   font-style: italic;
   letter-spacing: 1px;
 }
-
-
-
-
 .ScholarShip_Item_element{
   border-radius: 10px;
   overflow: hidden;
   width: 80%;
   margin: 10px auto;
 }
+
+
+
+
+
+
+
+/* comparision */
+.comparision{
+  min-height: 70vh;
+  /* background-color: #dddddd; */
+}
+
+.comparisionHeader{
+  background-color: #041e3abe;
+  color: white;
+}
+
+.comparsion-items{
+  width: 40%;
+  padding: 50px 0 ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.comparision-item{
+  width: 40%;
+  /* margin: auto; */
+}
+.comparision-item select{
+  width: 150px;
+  height: 40px;
+  text-align: center;
+}
+
+
+
+.comparsion-boxes{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.compare-Box{
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+  width: 45%;
+  height: fit-content;
+  background-color: #041e3a8f;
+}
+.compare-Box h2{
+  font-size: 32px;
+  padding: 10px 0;
+}
+.compare-Box h3{
+  font-size: 24px;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

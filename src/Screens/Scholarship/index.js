@@ -10,7 +10,7 @@ const ScholarShip = (props) => {
         <Header/>
     <div className="scholarship">
     <div className="scholarship-row">
-        <div className="scholarship-item">
+    <div className="scholarship-item">
                 <ScholarShipComponent heading="Sukker" id="1"/>
             </div>
             <div className="scholarship-item">
@@ -20,28 +20,28 @@ const ScholarShip = (props) => {
                 <ScholarShipComponent heading="Karachi" id="3"/>
             </div>
         </div>
-        {/* <div className="scholarship-row">
-        <div className="scholarship-item">
-                <ScholarShipComponent />
+        <div className="scholarship-row">
+    <div className="scholarship-item">
+                <ScholarShipComponent heading="Hyderabad" id="1"/>
             </div>
             <div className="scholarship-item">
-                <ScholarShipComponent />
+                <ScholarShipComponent heading="Mirpurkhas" id="2"/>
             </div>
             <div className="scholarship-item">
-                <ScholarShipComponent />
+                <ScholarShipComponent heading="Islamabad" id="3"/>
             </div>
         </div>
         <div className="scholarship-row">
-        <div className="scholarship-item">
-                <ScholarShipComponent />
+    <div className="scholarship-item">
+                <ScholarShipComponent heading="Quetta" id="1"/>
             </div>
             <div className="scholarship-item">
-                <ScholarShipComponent />
+                <ScholarShipComponent heading="Peshawar" id="2"/>
             </div>
             <div className="scholarship-item">
-                <ScholarShipComponent />
+                <ScholarShipComponent heading="Kohat" id="3"/>
             </div>
-        </div> */}
+        </div>
     </div>
     <Footer />
     </>
