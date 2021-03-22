@@ -1,38 +1,373 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:display=swap');
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  /* background-color: #eeeeee; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  border: 0px solid white;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/* header */
+.header{
+  color: white;
+  background-color: #041e3a;
+  width:100%;
+  height:100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title{
+  width: 20%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+}
+.header-links{
+  width: 30%;
+  height: 100%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header-links li{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  
+}
+.header-links li a{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+
+/* footer */
+.footer{
+  width: 100%;
+  margin: 0%;
+  color: white;
+  background-color: #041e3a;
+}
+.list-unstyled a{
+  margin-left: -40px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+
+/* carasoul */
+.carasoul123{
+  height:90vh
 }
+
+
+
+
+
+/* headerTExt */
+
+.HeaderText{
+  height: fit-content;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.HT-Heading{
+  padding:20px 0;
+  text-align: center;
+}
+.HT-Paragraph{
+  text-align: center;
+  width: 80%;
+padding:0 30px;  
+}
+
+
+
+
+/* ImageWithText */
+.ImageWithText{
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+}
+.IT-image{
+  width: 50%;
+  /* aspect-ratio: 1; */
+}
+.IT-image img{
+  width: 100%;
+  /* height: 400px; */
+}
+
+
+
+
+
+/* features */
+
+
+.features{
+  background-color: #cfcfcf;
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.feature-boxes{
+  background-color: #cfcfcf;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.feature-box{
+  width: 25%;
+}
+
+.feature-icon{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-boxes h4{
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+.feature-boxes p{
+    font-size: 16px;
+    }
+      
+    .btn-feature{
+      padding-top: 50px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+.btn-feature button{
+  border-radius: 100px;
+  width: 200px;
+  height: 40px
+}
+.btn-feature button:hover{
+  background-color: rgb(255, 204, 204);
+  transition: background-color 6ms ease;
+}
+
+
+
+
+
+
+/* scholarShipPage */
+.scholarship-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.scholarship-item{
+  width: 25%;
+  margin: 2px;
+}
+.scholarship{
+  min-height: 75vh;
+  padding-top: 50px;
+}
+
+
+
+
+
+/* ScholarShipComponent */
+.ScholarShipComponent{
+  width: 100%;
+  background-color: #041e3a85;
+  height: 250px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: black 1px solid;
+  box-shadow: 0px 5px 5px rgb(209, 209, 209);
+}
+.ScholarShipComponent:hover{
+  background-color: #041e3abe;
+  color: white;
+  text-decoration: none;
+}
+.ScholarShipComponent h3{
+  font-weight: 400;
+  font-style: italic;
+  font-size: 32px;
+  margin: 0;
+}
+.Scholarshipdetails{
+  min-height: 70vh;
+}
+.ScholarshipItem{
+  /* width: 100%; */
+  min-height: 100px;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #041e3a85;
+}
+.ScholarshipItem:hover{
+  background-color: #041e3abe;
+  text-decoration: none;
+}
+.ScholarshipItem h3{
+  font-size: 24px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.ScholarShip_Item_element{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  margin: 10px auto;
+}
+
+
+
+
+
+
+
+/* comparision */
+.comparision{
+  min-height: 70vh;
+  /* background-color: #dddddd; */
+}
+
+.comparisionHeader{
+  background-color: #041e3abe;
+  color: white;
+}
+
+.comparsion-items{
+  width: 40%;
+  padding: 50px 0 ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.comparision-item{
+  width: 40%;
+  /* margin: auto; */
+}
+.comparision-item select{
+  width: 150px;
+  height: 40px;
+  text-align: center;
+}
+
+
+
+.comparsion-boxes{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.compare-Box{
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+  width: 45%;
+  height: fit-content;
+  background-color: #041e3a8f;
+}
+.compare-Box h2{
+  font-size: 32px;
+  padding: 10px 0;
+}
+.compare-Box h3{
+  font-size: 24px;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+
+
+
+
+
+.login{
+  background-image: linear-gradient(#041e3a,#17589c,#041e3a);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-inner{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  color: white;
+}
+
+
+
+
+
+
+.inputWithLabel{
+  display: flex;
+  padding: 10px 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inputWithLabel h4{
+  font-size: 24px;
+  margin: 0;
+}
+.inputWithLabel input{
+  width: 250px;
+  height: 30px;
+}
+
+
+
