@@ -19,7 +19,7 @@ const Login = (props) => {
             <InputWithLabel label="Email" name="" value=""  />
             <InputWithLabel label="Password" name="" value= ""/>
            
-            <button style={{borderRadius:100,width:200,height:40}}>  <a href="./home" >Login</a></button>
+            <button style={{marginTop:40,borderRadius:100,width:200,height:40}}>  <a href="./home" >Login</a></button>
             {/* </a> */}
             </form>
         </div>

@@ -330,7 +330,7 @@ padding:0 30px;
 
 
 .login{
-  background-color: #041e3a;
+  background-image: linear-gradient(#041e3a,#17589c,#041e3a);
   width: 100%;
   height: 100vh;
   display: flex;
