@@ -329,14 +329,45 @@ padding:0 30px;
 
 
 
+.login{
+  background-color: #041e3a;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-inner{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  color: white;
+}
 
 
 
 
 
 
-
-
+.inputWithLabel{
+  display: flex;
+  padding: 10px 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inputWithLabel h4{
+  font-size: 24px;
+  margin: 0;
+}
+.inputWithLabel input{
+  width: 250px;
+  height: 30px;
+}
 
 
 

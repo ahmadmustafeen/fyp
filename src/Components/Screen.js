@@ -8,7 +8,7 @@ function Screen() {
   return (
       <Router>
       {/* <Header/> */}
-      <AuthRouterComponent />
+      {/* <AuthRouterComponent /> */}
       <RouterComponent />
       {/* <Footer /> */}
       </Router>

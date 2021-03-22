@@ -14,7 +14,8 @@ function RouterComponent() {
     <Router>
 
       <Switch>
-            <Route path="/" exact component={Home} />
+            <Route path="/" exact  component={Login} />
+            <Route path="/home"   component={Home} />
             <Route path="/compare"  component={Comparsion} />
             <Route path="/scholarship"  component={Scholarship} />
             <Route path="/scholarship_overview"  component={Scholarshipdetails} />

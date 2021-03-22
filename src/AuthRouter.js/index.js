@@ -10,7 +10,7 @@ function AuthRouterComponent() {
       
     <Router>
       <Switch>
-            <Route path="/login" exact component={Login} />
+            <Route path="/" exact component={Login} />
      </Switch>
      </Router>
 
