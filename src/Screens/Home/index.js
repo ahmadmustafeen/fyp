@@ -10,76 +10,28 @@ const Home = (props) => {
     
         <>
         <Header />
-    <div>
+    <div >
         
         <CarasoulComponent/>
-        <HeaderText heading="Heading" 
-        paragraph="adad thais asdasd  adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa
-        d adad thais asdasd         adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d "
+        <HeaderText 
+            headingLeft="Compare" 
+            headingRight="Universities" 
+            paragraph="Narrow down your favourite institutes and compare them side by side with our built-in tools"
+            buttonText="Continue" 
+            onClickButton="compare"
          />
          <div style={{width:'80%',display:'flex',margin:'auto'}}>
-         <ImageWithText heading="asdd" paragraph="adsadads"/>
+         <ImageWithText 
+            headingLeft="Information about"
+            headingRight="Scholarships" 
+            paragraph="All the available Scholarship under one flag so it will be easier to point out you interested one"
+            buttonText="Continue" 
+            onClickButton="scholarship"
+            />
          </div>
          <Features />
          <HeaderText heading="Heading" 
-        paragraph="adad thais asdasd  adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa
-        d adad thais asdasd         adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d adad thais asdasd 
-        adfas asda s a s ds dasdas dasd as
-        d a sd as d a sd asd sa d as d 
-        sad  as d sa d sa        d "
+        paragraph=""
          />
     </div>
     
