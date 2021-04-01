@@ -11,7 +11,6 @@ import Scholarshipdetails from '../Screens/Scholarshipdetails'
 function RouterComponent() {
   return (
       <>
-    <Router>
 
       <Switch>
             <Route path="/" exact  component={Login} />
@@ -22,7 +21,6 @@ function RouterComponent() {
 
      </Switch>
 
-     </Router>
 </>
   );
 }

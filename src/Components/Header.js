@@ -1,31 +1,27 @@
 import React from 'react'
-import { Link, BrowserRouter as Router, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Header = (props) => {
     return (
-        <Router >
             <nav className="header">
                 <h1 className="header-title">Site Title</h1>
-                <ul className="header-links">
-                        <li>
+                <div className="header-links">
+                    
                             
-                        <a href="/">Home</a>
+                        <Link to="/home" className="header-link-item"> Home</Link>
                         
+                    
                         
-                        </li>
-                        <li>
-                        <a href="./compare">Comparsion</a>
-                        </li>
-                        {/* <li>
-                        <Link to="/login">Login</Link>
-                        </li> */}
-                        <li>
-                        <a href="/scholarship">Scholarship</a>
-                        </li>
-                </ul>
+                        <Link to="/compare" className="header-link-item"> Comparsion</Link>
+                        
+                       
+                    
+                        
+                        <Link to="/scholarship" className="header-link-item"> Scholarship</Link>
+                        
+                </div>
             </nav>
-        </Router>
     )
 }
-export default withRouter(Header)
+export default (Header)
