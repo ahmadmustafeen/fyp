@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Footer from '../../Components/Footer'
 import Header from '../../Components/Header'
 import HeaderText from '../../Components/HeaderText'
+import SelectItem from '../../Components/SelectItem'
 
 const Univeristy_DATA = [
     {id:1,name:"DUET",fee:"30k",semester:"annual",hostel:"none"},
@@ -30,25 +31,15 @@ const Camparsion = (props) => {
         <Header />
     <div className="comparision">
         <div className="comparisionHeader">
-            <HeaderText heading="Compare Univeristy" paragraph="Compare from the following univeristy to get the better view and understanding"/>
+            <HeaderText 
+                headingLeft="Compare" 
+                headingRight="Institutes" 
+                paragraph="Narrow down your favourite institutes and compare them side by side with our built-in tools"
+            />
         </div>
         {console.log(state)}
         <div className="comparsion-items">
-        <div className="comparision-item">
-                <h3>
-                    First University
-                </h3>
-                <select name="first_id" onChange={handleChange}
->
-                    {Univeristy_DATA.map((item)=>{
-                        return(
-                            <option id={item.id}>
-                                {item.name}
-                            </option>
-                        )
-                    })}
-                </select>
-            </div>
+            <SelectItem />
             <div className="comparision-item">
                 <h3>
                     Second University
@@ -63,7 +54,6 @@ const Camparsion = (props) => {
                     })}
                 </select>
             </div>
-
         </div>
         <div className="comparsion-boxes">
         {(state.second_id ||state.first_id)&&

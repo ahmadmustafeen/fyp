@@ -5,7 +5,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const Header = (props) => {
+const Header = (props) => { 
     return (
             <nav className="header">
                 <h1 className="header-title">Site Title</h1>

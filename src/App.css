@@ -67,7 +67,7 @@ button{
   width: 100%;
   margin: 0%;
   color: white;
-  background-color: #041e3a;
+  background-color: black;
 }
 .list-unstyled a{
   margin-left: -40px;
@@ -88,6 +88,16 @@ button{
 
 
 
+/* SelectItem */
+.SelectItem{
+  width: 100%;
+  background-color: red;
+}
+
+.SelectItem-Heading{
+  width: 100%;
+  text-align: center;
+}
 
 /* headerTExt */
 
@@ -159,35 +169,41 @@ padding:0 30px;
 .features{
   /* background-color: #cfcfcf; */
   display: flex;
-  padding: 100px 0;
-  padding-top: 100px;
+  /* padding: 100px 0; */
+  /* padding-top: 100px; */
   flex-direction: column;
   text-align: center;
 }
 
 
 .feature-boxes{
-  background-color: #cfcfcf;
+  background-color: #cfcfcf48;
   display: flex;
+  min-height: 40vh;
   flex-direction: row;
-  justify-content: center;
+  padding: 20px 0;
+  justify-content: space-around;
   align-items: center;
   
 }
 
 .feature-box{
   width: 25%;
+  /* background-color: red; */
 }
 
 .feature-icon{
   width: 100%;
-  display: flex;
+  display: flex;  
+  color: #b32137;
   align-items: center;
   justify-content: center;
 }
 .feature-boxes h4{
   padding-top: 5px;
-  font-size: 20px;
+  font-weight: bold;
+  color: #b32137;
+  font-size: 28px;
   font-weight: bold;
   }
 
@@ -217,6 +233,12 @@ padding:0 30px;
 
 
 /* scholarShipPage */
+
+.scholarship{
+  min-height: 100vh;
+  padding-top: 150px;
+}
+
 .scholarship-row{
   display: flex;
   flex-direction: row;
@@ -227,11 +249,6 @@ padding:0 30px;
   width: 25%;
   margin: 2px;
 }
-.scholarship{
-  min-height: 75vh;
-  padding-top: 150px;
-}
-
 
 
 
@@ -297,14 +314,13 @@ padding:0 30px;
 
 /* comparision */
 .comparision{
-  padding-top: 100px;
-  min-height: 70vh;
+
+  min-height: 75vh;
   /* background-color: #dddddd; */
 }
 
-.comparisionHeader{
-  background-color: #041e3abe;
-  color: white;
+.comparisionHeader{  
+  padding-top: 100px;
 }
 
 .comparsion-items{

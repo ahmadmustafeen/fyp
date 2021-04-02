@@ -1,10 +1,14 @@
 import React from 'react'
+
+import { faCoffee,faSatelliteDish,faNewspaper } from '@fortawesome/free-solid-svg-icons'
+
 import CarasoulComponent from '../../Components/Carasoul'
 import Features from '../../Components/Features'
 import Footer from '../../Components/Footer'
 import Header from '../../Components/Header'
 import HeaderText from '../../Components/HeaderText'
 import ImageWithText from '../../Components/ImageWithText'
+
 const Home = (props) => {
     return (
     
@@ -20,6 +24,9 @@ const Home = (props) => {
             buttonText="Continue" 
             onClickButton="compare"
          />
+
+
+
          <div style={{width:'80%',display:'flex',margin:'auto'}}>
          <ImageWithText 
             headingLeft="Information about"
@@ -29,9 +36,28 @@ const Home = (props) => {
             onClickButton="scholarship"
             />
          </div>
-         <Features />
-         <HeaderText heading="Heading" 
-        paragraph=""
+
+
+
+
+         <Features 
+            headingOne="All in one touch"
+            headingTwo="Reliable"
+            headingThree="Up to date information"
+            paragraphOne="All the required data is available in just one click"
+            paragraphTwo="This website ensures and authenticate all the data"
+            paragraphThree="All the recent news are available here"
+            iconOne={faCoffee}
+            iconTwo={faNewspaper}
+            iconThree={faSatelliteDish}
+         />
+         <HeaderText 
+            headingLeft="Search for" 
+            headingRight="Reviews" 
+            paragraph="Select different institutes and find out what people have to say about it and choose the one which fits you the 
+            best"
+            buttonText="Continue" 
+            onClickButton="review" 
          />
     </div>
     
