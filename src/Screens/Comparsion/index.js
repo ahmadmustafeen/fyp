@@ -2,13 +2,53 @@ import React,{useState} from 'react'
 import Footer from '../../Components/Footer'
 import Header from '../../Components/Header'
 import HeaderText from '../../Components/HeaderText'
+import SelectedBox from '../../Components/SelectedBox'
 import SelectItem from '../../Components/SelectItem'
 
 const Univeristy_DATA = [
-    {id:1,name:"DUET",fee:"30k",semester:"annual",hostel:"none"},
-    {id:2,name:"MUET",fee:"28k",semester:"semester",hostel:"yes"},
-    {id:3,name:"UIT",fee:"50k",semester:"semester",hostel:"yes"},
-    {id:4,name:"KIET",fee:"60k",semester:"semester",hostel:"yes"}
+    {   id:1,
+        name:"DUET",
+        display_name:"Dawood UET",
+        fee:"30k",
+        programs:13,
+        semester:"annual",
+        hostel:"none",
+        establishment:"1963",
+        address:"Main M.A. Jinnah Road,Karachi"
+    },
+    {
+        id:2,
+        name:"MUET",
+        display_name:"Mehran UET",
+        fee:"28k",
+        programs:24,
+        semester:"semester",
+        hostel:"yes",
+        establishment:"1988",
+        address:"Main M.A. Jinnah Road,Karachi"
+    },
+    {   
+        id:3,
+        name:"UIT",
+        display_name:"Usman Institue",
+        fee:"50k",
+        programs:10,
+        semester:"semester",
+        hostel:"yes",
+        establishment:"1999",
+        address:"Main M.A. Jinnah Road,Karachi"
+    },
+    {
+        id:4,
+        name:"KIET",
+        display_name:"PAF_KIET",
+        fee:"60k",
+        programs:13,
+        semester:"semester",
+        hostel:"yes",
+        establishment:"1923",
+        address:"Main M.A. Jinnah Road,Karachi"
+    }
 ]
 
 
@@ -17,8 +57,10 @@ const Camparsion = (props) => {
         first_id:"",
         second_id:""
     })
-    const handleChange = (e) =>{
-        let {name, value} = e.target;
+    const handleChange = (name,value) =>{
+        if(name==='second_id' && state.first_id===""){
+            alert("Select First University As Well to see the result")
+        }
         setState({
             ...state,
           [name]: value,
@@ -39,24 +81,29 @@ const Camparsion = (props) => {
         </div>
         {console.log(state)}
         <div className="comparsion-items">
-            <SelectItem />
-            <div className="comparision-item">
-                <h3>
-                    Second University
-                </h3>
-                <select name="second_id" onChange={handleChange}>
-                    {Univeristy_DATA.map((item)=>{
-                        return(
-                            <option id={item.id}>
-                                {item.name}
-                            </option>
-                        )
-                    })}
-                </select>
-            </div>
+        <div style={{width:'45%'}}>
+           <SelectItem 
+           title="Select First Institute"
+           selectItem={(val)=>handleChange("first_id",val.target.value)} 
+           data={Univeristy_DATA.filter((item)=>  item.id!=state.second_id)}
+           />
+           </div>
+           <div style={{width:'45%'}}>
+           <SelectItem 
+           title="Select Second Institute"
+           selectItem={(val)=>handleChange("second_id",val.target.value)} 
+           data={Univeristy_DATA.filter((item)=>  item.id!=state.first_id)}/>
+           </div>
+           
         </div>
         <div className="comparsion-boxes">
-        {(state.second_id ||state.first_id)&&
+            <div style={{width:'45%'}}>
+               {state.first_id && <SelectedBox props={Univeristy_DATA.find(university=>university.id==state.first_id)}/> }
+            </div>
+            <div style={{width:'45%'}}>
+               {state.first_id && state.second_id && <SelectedBox props={Univeristy_DATA.find(university=>university.id==state.second_id)}/> }
+            </div>
+        {/* {(state.second_id ||state.first_id)&&
         <div className="compare-Box">
             <h2>
                 <span style={{color:'rgb(240,240,240)'}}>Name: </span>{Univeristy_DATA.find((item)=>state.first_id===item.name)?.name}
@@ -88,7 +135,7 @@ const Camparsion = (props) => {
             <h3>
                 Hostel Facility: {Univeristy_DATA.find((item)=>state.second_id===item.name).hostel}
             </h3>
-        </div>}
+        </div>} */}
         </div>
     </div>
     <Footer/>

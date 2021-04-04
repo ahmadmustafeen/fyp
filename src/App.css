@@ -39,8 +39,6 @@ button{
 }
 .header-links{
   width: 60%;
-  /* height: 100%; */
-  /* background-color: red; */
   padding-right: 10%;
   display: flex;
   align-items: center;
@@ -91,13 +89,62 @@ button{
 /* SelectItem */
 .SelectItem{
   width: 100%;
-  background-color: red;
+  border: 2px solid #b32137;
+  /* padding-bottom: 30px; */
 }
 
-.SelectItem-Heading{
+.SelectItem-Header{
   width: 100%;
+  color: white;
+  padding: 20px 0;
+  background-color: #b32137;
   text-align: center;
 }
+.SelectItem-Body{
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SelectItem-Body select{
+  width: 80%;
+  height: 40px;
+}
+
+
+
+
+
+/* selectedBox */
+.selectedBox{
+  width: 100%;
+  border: 2px solid #b32137;
+}
+.selectedBox-Header{
+  display: flex;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #b32137;
+  color: white;
+}
+
+.selectedBox-Details{
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+}
+.selectedBox-Details-Row{
+
+  padding: 0 10%;
+  color: black;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 /* headerTExt */
 
@@ -324,7 +371,7 @@ padding:0 30px;
 }
 
 .comparsion-items{
-  width: 40%;
+  width: 70%;
   padding: 50px 0 ;
   display: flex;
   flex-direction: row;
@@ -345,7 +392,7 @@ padding:0 30px;
 
 
 .comparsion-boxes{
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: flex;
   flex-direction: row;
