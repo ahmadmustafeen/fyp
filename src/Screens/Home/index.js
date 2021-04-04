@@ -61,8 +61,8 @@ const Home = (props) => {
          />
          <div style={{width:'80%',display:'flex',margin:'auto'}}>
             <ImageWithText 
-               headingLeft="Admission"
-               headingRight="Criteria" 
+               headingLeft="Open"
+               headingRight="Admissions" 
                paragraph="All the available Scholarship under one flag so it will be easier to point out you interested one"
                buttonText="Continue" 
                onClickButton="admission"
