@@ -5,6 +5,7 @@ import Login from '../Screens/Login'
 import Scholarship from '../Screens/Scholarship'
 import Scholarshipdetails from '../Screens/Scholarshipdetails'
 import Admission from '../Screens/Admission'
+import University from '../Screens/University'
 
 
 function RouterComponent() {
@@ -18,6 +19,7 @@ function RouterComponent() {
             <Route path="/scholarship"  component={Scholarship} />
             <Route path="/scholarship_overview"  component={Scholarshipdetails} />
             <Route path="/admission"  component={Admission} />
+            <Route path="/university"  component={University} />
 
      </Switch>
 

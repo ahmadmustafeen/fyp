@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -13,6 +14,7 @@ const UniversityItem = (props) => {
     } = props
     return(
         <div style={{width:'30%',}}>
+            <Link to={`/university/${id}`}>
             <div className="UniversityItem">        
                 <div className="UniversityItem_img">
                     <img src={require("./image3.jpg").default} alt="image3"/>
@@ -27,6 +29,7 @@ const UniversityItem = (props) => {
 
                 </div>  
         </div>
+        </Link>
         </div>
     )
 }

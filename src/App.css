@@ -520,3 +520,37 @@ padding:0 30px;
   justify-content: space-around;
   flex-direction: row;
 }
+
+
+
+
+
+
+
+
+
+.university{
+  padding-top: 100px;
+ min-height: 72vh; 
+}
+
+.university_inner{
+  width: 80%;
+  padding-top: 10vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.university_inner_left{
+  width: 60%;
+  
+}
+.university_inner_right{
+  width: 40%;
+}
+.University_admissions{
+  padding:50px;
+  padding-left: 10%;
+}
