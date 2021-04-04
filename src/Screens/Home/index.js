@@ -59,6 +59,15 @@ const Home = (props) => {
             buttonText="Continue" 
             onClickButton="review" 
          />
+         <div style={{width:'80%',display:'flex',margin:'auto'}}>
+            <ImageWithText 
+               headingLeft="Admission"
+               headingRight="Criteria" 
+               paragraph="All the available Scholarship under one flag so it will be easier to point out you interested one"
+               buttonText="Continue" 
+               onClickButton="admission"
+            />
+         </div>
     </div>
     
     <Footer/>

@@ -3,7 +3,8 @@ import React from 'react'
 
 const SelectItem = props => {
     const {
-        title
+        title,
+        placeholder
     } = props
     return(
         <div className="SelectItem">
@@ -13,8 +14,8 @@ const SelectItem = props => {
                 </h2>
             </div>
             <div className="SelectItem-Body">
-                <select onChange={(val)=>props.selectItem(val) }>
-                    <option disabled></option>
+                <select onChange={(val)=>props?.selectItem(val) } placeholder={placeholder}>
+                    <option disabled selected >{placeholder}</option>
                     {
                         props.data?.map(item=>{
                           return  <option value={item.id}>{item.name}</option>
