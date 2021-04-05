@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../../Components/Footer'
 import Header from '../../Components/Header'
+import HeaderText from '../../Components/HeaderText'
 import ScholarShipComponent from '../../Components/ScholarshipComponent'
 
 
@@ -9,6 +10,11 @@ const ScholarShip = (props) => {
         <>
         <Header/>
     <div className="scholarship">
+    <HeaderText
+                        headingLeft="Select "
+                        headingRight="your City"
+                        paragraph="Narrow down your favourite institutes and compare them side by side with our built-in tools"
+                    />
     <div className="scholarship-row">
     <div className="scholarship-item">
                 <ScholarShipComponent heading="Sukker" id="1"/>

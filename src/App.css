@@ -295,7 +295,7 @@ padding:0 30px;
 }
 .scholarship-item{
   width: 25%;
-  margin: 2px;
+  padding: 20px 0;
 }
 
 
@@ -303,31 +303,38 @@ padding:0 30px;
 
 /* ScholarShipComponent */
 .ScholarShipComponent{
-  width: 100%;
-  background-color: #041e3a85;
-  height: 250px;
+  width: 80%;
+  margin: auto;
+  height: 200px;
+  color: #b32137;
+  box-shadow: 0px  0px  10px  5px #b32137;
+  
   display: flex;
-  color: white;
   justify-content: center;
   align-items: center;
-  border: black 1px solid;
-  box-shadow: 0px 5px 5px rgb(209, 209, 209);
 }
 .ScholarShipComponent:hover{
-  background-color: #041e3abe;
-  color: white;
+  background-color: #b3213731;
+  color: #17589c;
   text-decoration: none;
 }
 .ScholarShipComponent h3{
   font-weight: 400;
-  font-style: italic;
+  font-style: italic; color: #b32137;
   font-size: 32px;
   margin: 0;
 }
 .Scholarshipdetails{
-  min-height: 70vh;
+  min-height: 70vh;  padding-top: 150px;
+}
+.ScholarshipItem h3{
+  font-size: 24px;
+  color: #b32137;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 .ScholarshipItem{
+
   /* width: 100%; */
   min-height: 100px;
   padding: 0 10%;
@@ -335,17 +342,17 @@ padding:0 30px;
   flex-direction: row;
   /* justify-content: center; */
   align-items: center;
-  /* background-color: #041e3a85; */
+  background-color: whitesmoke;
+  color: #b32137;
 }
 .ScholarshipItem:hover{
-  background-color: #041e3abe;
+  background-color: #b32137dc;
   text-decoration: none;
-}
-.ScholarshipItem h3{
-  font-size: 24px;
   color: white;
-  font-style: italic;
-  letter-spacing: 1px;
+}
+
+.ScholarshipItem:hover h3{
+  color: white;
 }
 .ScholarShip_Item_element{
   border-radius: 10px;
@@ -483,6 +490,7 @@ padding:0 30px;
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding:  10px;
   align-items: center;
   text-align: center;
   /* background-color: rebeccapurple; */
@@ -490,13 +498,15 @@ padding:0 30px;
 }
 .UniversityItem_text h6{
   font-size: 12px;
-  font-weight: 300;
+  color: black;  padding-right:  10px;
+  font-weight: 400;
 }
 
 .UniversityItem_text h3{
   text-transform: capitalize;
-  font-weight: 800;
-  font-size: 18px;
+  color: #b32137;
+  font-weight: 800;  padding-right:  10px;
+  font-size: 22px;
 }
 
 

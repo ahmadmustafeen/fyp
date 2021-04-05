@@ -23,7 +23,7 @@ const Header = (props) => {
                         
                         <Link to="/scholarship" className="header-link-item"> Scholarship</Link>
                         <Link to="/scholarship" className="header-link-item"> Review</Link>
-                        <Link to="/scholarship" className="header-link-item"> News</Link>
+                        <Link to="/news" className="header-link-item"> News</Link>
                         <Link to="/scholarship" className="header-link-item"> Scholarship</Link>
                         <Link to="/admission" className="header-link-item"> Admission</Link>
 
