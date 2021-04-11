@@ -8,6 +8,7 @@ import Admission from '../Screens/Admission'
 import University from '../Screens/University'
 import News from '../Screens/News'
 import Reviews from '../Screens/Reviews'
+import SignUp from '../Screens/SignUp'
 
 
 function RouterComponent() {
@@ -24,6 +25,7 @@ function RouterComponent() {
             <Route path="/university"  component={University} />
             <Route path="/news"  component={News} />
             <Route path="/reviews"  component={Reviews} />
+            <Route path="/signup"  component={SignUp} />
      </Switch>
 
 </>

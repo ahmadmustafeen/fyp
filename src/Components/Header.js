@@ -8,7 +8,10 @@ import { Link } from 'react-router-dom'
 const Header = (props) => { 
     return (
             <nav className="header">
-                <h1 className="header-title">Site Title</h1>
+                <div className="header-title">
+
+               <Link to="/home" className="link"><h1 style={{color:'white'}}> Site Title</h1></Link>
+                </div>
                 <div className="header-links">
                     
                             

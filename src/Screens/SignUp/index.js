@@ -13,33 +13,32 @@ const InputWithLabel = (props) => {
 }
 
 
-const Login = (props) => {
+const SignUp = (props) => {
     return (
         <div className="login">
             <div className="login-inner">
                 <div className="login_left">
                     <h1>
-                        Login
+                        Create a New Account
                     </h1>
                     <p>
-                        Login into your existing account or
+                        Create a new account or
                     </p>
-                    <Link to="signup">
-                        <p>Create a New Account</p>
+                    <Link to="/">
+                        <p>Login with your Existing Account</p>
                     </Link>
 
                 </div>
                 <div className="login_right">
-
-                    <HeaderText headingLeft="Welcome to "headingRight="Site Title"/>
+                    <HeaderText headingLeft="Create a " headingRight="New Account"/>
                     <InputWithTitle title="Email" placeholder="engr.ahmadmustafeen@gmail.com" onChange={(e) => console.log(e.target.value)} />
                     <InputWithTitle title="Password" secureEntry placeholder="********" onChange={(e) => console.log(e.target.value)} />
                     <div class="login_right_button">
-                    <button>
-                            <Link to="signup" style={{color:'white'}}>Create New Account</Link>
+                        <button>
+                            <Link to="/" style={{ color: 'white' }}>Already have an Account?</Link>
                         </button>
                         <button>
-                            <Link to="home"  style={{color:'white'}}>Login</Link>
+                            <Link to="/" style={{ color: 'white' }}>Register</Link>
                         </button>
                     </div>
                 </div>
@@ -58,4 +57,4 @@ const Login = (props) => {
         </div>
     )
 }
-export default Login
+export default SignUp
